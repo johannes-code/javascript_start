@@ -23,6 +23,7 @@ body.dark {
 button {
   padding: 8px 16px;
   font-size: 24px;
+  transition: 1s ease;
 }
 
 body.light button {

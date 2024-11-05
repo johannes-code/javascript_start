@@ -45,8 +45,10 @@ const imageUrls = ["../img/geranimo-fpC5Jq7LLL8-unsplash.jpg",
         
         gallery.appendChild(newImg)
     })
-    
+    button.remove()
 }
+
+    
 
 function themeSwitcher() {
     document.body.classList.toggle("light")
