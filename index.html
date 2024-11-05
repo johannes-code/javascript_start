@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>nope</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script type="module" src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
-  <body>
+  <body class="light">
+    <button onclick="themeSwitcher()">Switch theme</button>
     <div id="content" class="content">
-      <img
-        id="img"
-        src="../img/sian-cooper-NEJcmvLFcws-unsplash.jpg"
-        alt=""
-      />
-      <div id="gallery"> </div>
-      
+      <img id="img" src="../img/sian-cooper-NEJcmvLFcws-unsplash.jpg" alt="" />
+      <button id="button" onclick="showgallery()">click</button>
+      <div id="gallery"></div>
     </div>
   </body>
 </html>

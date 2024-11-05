@@ -8,9 +8,35 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: dodgerblue;
+  
 }
 
+body.light {
+  background-color: dodgerblue;
+  color:black
+}
+
+body.dark {
+  background-color: black;
+  color: whitesmoke;
+}
+button {
+  padding: 8px 16px;
+  font-size: 24px;
+}
+
+body.light button {
+  background-color: black ;
+  color: white;
+  border-radius: 8px;
+}
+
+body.dark button {
+  background-color: grey;
+  color: black;
+  border-radius: 8px;
+
+}
 #content {
   font-size: 104px;
   gap: 16px;

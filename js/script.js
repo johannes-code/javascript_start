@@ -1,6 +1,7 @@
 const mainContent = document.getElementById("content")
 const mainImage = document.getElementById("img")
 const gallery = document.getElementById("gallery")
+const button = document.getElementById("button")
 // const newImage = document.createElement("img")newImage.src="../img/kelly-sikkema-hSPVuakrJqs-unsplash.jpg"
 
 // console.log(gallery)
@@ -35,6 +36,8 @@ const imageUrls = ["../img/geranimo-fpC5Jq7LLL8-unsplash.jpg",
 
     mainImage.src = (imageUrls[randomNum])
     
+
+    function showgallery() {
     imageUrls.forEach(url => {
         const newImg = document.createElement("img")
         newImg.src = url
@@ -42,3 +45,10 @@ const imageUrls = ["../img/geranimo-fpC5Jq7LLL8-unsplash.jpg",
         
         gallery.appendChild(newImg)
     })
+    
+}
+
+function themeSwitcher() {
+    document.body.classList.toggle("light")
+    document.body.classList.toggle("dark")
+}
